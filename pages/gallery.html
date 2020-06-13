@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jayson Damiotan - A Personal Website</title>
+  
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-gallery.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="../js/gallery.js"></script>
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+</head>
+
+<body id="theme">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="con container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="../index.html">JaysonDamiotan</a>
+        </div>
+        <div class="menu collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav pull-right">
+              <li class="active"><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#about">About</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+  </nav>
+
+  <!--Images-->
+  <div class="container">
+    <div class="about-area container container-fluid text-center">
+      <h3>Gallery</h3>
+    </div>
+  </div>
+  <div class="images container center-block">
+    <div class="row">
+      <div class="cols col-sm-4 ">
+        <img src="../images/gallery01.jpg" onclick="openModal();currentSlide(1)">
+      </div>
+      <div class="cols col-sm-4">
+        <img src="../images/gallery02.jpg" onclick="openModal();currentSlide(2)">
+      </div>
+      <div class="cols col-sm-4">
+        <img src="../images/gallery04.jpg" onclick="openModal();currentSlide(3)">
+      </div>
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="../images/gallery01.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="../images/gallery02.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="../images/gallery04.jpg" style="width:100%">
+        </div>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="../images/gallery01.jpg" onclick="currentSlide(1)" alt="Nature">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/gallery02.jpg" onclick="currentSlide(2)" alt="Snow">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/gallery03.jpg" onclick="currentSlide(3)" alt="Mountains">
+        </div>
+      </div>
+  </div>
+
+
+
+</body>
+</html>
